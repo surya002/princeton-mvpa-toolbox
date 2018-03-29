@@ -77,7 +77,7 @@ if exist_objfield(subj,objtype,objname,'movehd')
   mat = newmat;  
   save(movehd.pathfilename,'mat');
   clear mat
-  subj = set_objsubfield(subj,objtype,objname,'movehd','last_saved',datetime(true),'ignore_absence',true);
+  subj = set_objsubfield(subj,objtype,objname,'movehd','last_saved',datetime,'ignore_absence',true);
  
 % Otherwise, get the cell array. Mess with the appropriate cell in
 % it. Set it back into the subj structure
